@@ -239,12 +239,7 @@ pip install numpy pandas statsmodels hmmlearn scikit-learn matplotlib scipy ib_i
 
 ## Research Paper
 
-This strategy is documented in a working paper submitted to SSRN:
-
 **Regime-Aware Statistical Arbitrage: Rolling Cointegration with Dynamic Volatility Targeting in the S&P 100**
-
-> MSc Student, Imperial College London  
-> April 2026
 
 Key findings:
 - Newey-West t-statistic: **9.454** (p < 0.001)
