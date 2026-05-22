@@ -1,0 +1,219 @@
+﻿python.exe : [NbConvertApp] Converting notebook 
+arcana_stage3_hmm_regime_engine_v2.ipynb to notebook
+At line:1 char:1
++ & "c:\Users\patri\OneDrive\Desktop\Regime-Aware-Statistical-Arbitrage ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([NbConvertApp] ...ynb to notebook 
+   :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+C:\Users\patri\OneDrive\Desktop\Regime-Aware-Statistical-Arbitrage\.venv\Lib\si
+te-packages\zmq\_future.py:718: RuntimeWarning: Proactor event loop does not 
+implement add_reader family of methods required for zmq. Registering an 
+additional selector thread for add_reader support via tornado. Use 
+`asyncio.set_event_loop_policy(WindowsSelectorEventLoopPolicy())` to avoid 
+this warning.
+  self._get_loop()
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\patri\OneDrive\Desktop\Regime-Aware-Statistical-Arbitrage\.ven
+v\Lib\site-packages\nbconvert\__main__.py", line 5, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\patri\OneDrive\Desktop\Regime-Aware-Statistical-Arbitrage\.ven
+v\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\patri\OneDrive\Desktop\Regime-Aware-Statistical-Arbitrage\.ven
+v\Lib\site-packages\traitlets\config\application.py", line 1082, in 
+launch_instance
+    app.start()
+    ~~~~~~~~~^^
+  File "C:\Users\patri\OneDrive\Desktop\Regime-Aware-Statistical-Arbitrage\.ven
+v\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\patri\OneDrive\Desktop\Regime-Aware-Statistical-Arbitrage\.ven
+v\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\patri\OneDrive\Desktop\Regime-Aware-Statistical-Arbitrage\.ven
+v\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in 
+convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        notebook_filename, resources, input_buffer=input_buffer
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\patri\OneDrive\Desktop\Regime-Aware-Statistical-Arbitrage\.ven
+v\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in 
+export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        notebook_filename, resources=resources
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\patri\OneDrive\Desktop\Regime-Aware-Statistical-Arbitrage\.ven
+v\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in 
+from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\patri\OneDrive\Desktop\Regime-Aware-Statistical-Arbitrage\.ven
+v\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ~~~~~~~~~~~~~~~~~~~~~~~^
+        nbformat.read(file_stream, as_version=4), resources=resources, **kw
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\patri\OneDrive\Desktop\Regime-Aware-Statistical-Arbitrage\.ven
+v\Lib\site-packages\nbconvert\exporters\notebook.py", line 36, in 
+from_notebook_node
+    nb_copy, resources = super().from_notebook_node(nb, resources, **kw)
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\patri\OneDrive\Desktop\Regime-Aware-Statistical-Arbitrage\.ven
+v\Lib\site-packages\nbconvert\exporters\exporter.py", line 154, in 
+from_notebook_node
+    nb_copy, resources = self._preprocess(nb_copy, resources)
+                         ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\patri\OneDrive\Desktop\Regime-Aware-Statistical-Arbitrage\.ven
+v\Lib\site-packages\nbconvert\exporters\exporter.py", line 353, in _preprocess
+    nbc, resc = preprocessor(nbc, resc)
+                ~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\patri\OneDrive\Desktop\Regime-Aware-Statistical-Arbitrage\.ven
+v\Lib\site-packages\nbconvert\preprocessors\base.py", line 48, in __call__
+    return self.preprocess(nb, resources)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\patri\OneDrive\Desktop\Regime-Aware-Statistical-Arbitrage\.ven
+v\Lib\site-packages\nbconvert\preprocessors\execute.py", line 103, in 
+preprocess
+    self.preprocess_cell(cell, resources, index)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\patri\OneDrive\Desktop\Regime-Aware-Statistical-Arbitrage\.ven
+v\Lib\site-packages\nbconvert\preprocessors\execute.py", line 124, in 
+preprocess_cell
+    cell = self.execute_cell(cell, index, store_history=True)
+  File "C:\Users\patri\OneDrive\Desktop\Regime-Aware-Statistical-Arbitrage\.ven
+v\Lib\site-packages\jupyter_core\utils\__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\patri\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base
+_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\patri\OneDrive\Desktop\Regime-Aware-Statistical-Arbitrage\.ven
+v\Lib\site-packages\nbclient\client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "C:\Users\patri\OneDrive\Desktop\Regime-Aware-Statistical-Arbitrage\.ven
+v\Lib\site-packages\nbclient\client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the 
+following cell:
+------------------
+import os
+import pickle
+import warnings
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
+import matplotlib.patches as mpatches
+import seaborn as sns
+from scipy import stats
+from sklearn.preprocessing import StandardScaler
+from hmmlearn.hmm import GaussianHMM
+
+warnings.filterwarnings('ignore')
+
+# \u2500\u2500 Arcana plot style \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u25
+00\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u250
+0\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
+\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\
+u2500\u2500\u2500\u2500\u2500\u2500\u2500
+plt.rcParams.update({
+    'figure.facecolor'  : '#0d0f14',
+    'axes.facecolor'    : '#0d0f14',
+    'axes.edgecolor'    : '#2a2d35',
+    'axes.labelcolor'   : '#8b8fa8',
+    'axes.titlecolor'   : '#e2e4ed',
+    'axes.titlesize'    : 13,
+    'axes.labelsize'    : 11,
+    'axes.grid'         : True,
+    'grid.color'        : '#1e2029',
+    'grid.linewidth'    : 0.6,
+    'xtick.color'       : '#555870',
+    'ytick.color'       : '#555870',
+    'xtick.labelsize'   : 9,
+    'ytick.labelsize'   : 9,
+    'text.color'        : '#e2e4ed',
+    'legend.facecolor'  : '#12141a',
+    'legend.edgecolor'  : '#2a2d35',
+    'legend.fontsize'   : 9,
+    'lines.linewidth'   : 1.4,
+    'font.family'       : 'monospace',
+})
+
+C_GOLD   = '#c9a84c'
+C_TEAL   = '#3ec9b0'
+C_BLUE   = '#4f8ef7'
+C_RED    = '#e05c6b'
+C_PURPLE = '#9b7fe8'
+C_GREY   = '#555870'
+C_WHITE  = '#e2e4ed'
+
+# Regime colours ù fixed across ALL plots in ALL stages
+REGIME_COLORS = {0: C_TEAL, 1: C_GOLD, 2: C_RED}
+REGIME_NAMES  = {0: 'Bull (low vol)', 1: 'Neutral (medium vol)', 2: 'Crisis 
+(high vol)'}
+
+# \u2500\u2500 CONFIG \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2
+500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u25
+00\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u250
+0\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
+\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\
+u2500\u2500
+STAGE2_DIR = r'C:\Arbion Research\Stage 2 feature engineering'
+OUTPUT_DIR = r'C:\Arbion Research\Stage 3 HMM regime engine'
+
+N_STATES       = 3      # bull / neutral / crisis  (Wang et al. validated 3 > 
+2)
+N_ITER         = 2000   # EM iterations  (paper used 75 ù we use 1000 for 
+better convergence)
+N_INIT         = 20     # random restarts ù take best log-likelihood
+RANDOM_STATE   = 42
+PERSIST_WINDOW = 3      # days new regime must persist before label switches
+PERSIST_THRESH = 0.70   # probability threshold for persistence filter
+
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+print('\u2713 Configuration loaded')
+print(f'  Input  \u2192 {STAGE2_DIR}')
+print(f'  Output \u2192 {OUTPUT_DIR}')
+print(f'  HMM: {N_STATES} states  |  {N_ITER} EM iterations  |  {N_INIT} 
+restarts')
+------------------
+
+
+[31m--------------------------------------------------------------------------
+-[39m
+[31mModuleNotFoundError[39m                       Traceback (most recent 
+call last)
+[36mCell[39m[36m [39m[32mIn[1][39m[32m, line 12[39m
+[32m      8[39m [38;5;28;01mimport[39;00m matplotlib.patches 
+[38;5;28;01mas[39;00m mpatches
+[32m      9[39m [38;5;28;01mimport[39;00m seaborn [38;5;28;01mas[39;00m 
+sns
+[32m     10[39m [38;5;28;01mfrom[39;00m scipy [38;5;28;01mimport[39;00m 
+stats
+[32m     11[39m [38;5;28;01mfrom[39;00m sklearn.preprocessing 
+[38;5;28;01mimport[39;00m StandardScaler
+[32m---> [39m[32m12[39m [38;5;28;01mfrom[39;00m hmmlearn.hmm 
+[38;5;28;01mimport[39;00m GaussianHMM
+[32m     13[39m 
+[32m     14[39m warnings.filterwarnings([33m'ignore'[39m)
+[32m     15[39m 
+
+[31mModuleNotFoundError[39m: No module named 'hmmlearn'
+
